@@ -5,52 +5,38 @@ import java.util.regex.Pattern;
 import java.util.Scanner;
 public class Assignment1 {
 
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
 			
-	        // email
-		System.out.print("Enter student email: ");
-	        String studentEmail = scan.nextLine();
-
-	        Pattern pattern = Pattern.compile("\\w+@students.national-u.edu.ph");
-	        Matcher matcher = pattern.matcher(studentEmail);
-
-	        boolean match = matcher.matches();
-
-	        if (match) {
-	            System.out.println("Valid student email");
-	        } else {
-	            System.out.println("Invalid student email");
-	        }
-	        
-	        System.out.print("Enter cellphone number: ");
-	        String cellNum = scan.nextLine();
-
-	        Pattern pattern2 = Pattern.compile("\\+63\\d{9}");
-	        Matcher matcher2 = pattern.matcher(cellNum);
-
-	        boolean match2 = matcher.matches();
-
-	        if (match2) {
-	            System.out.println("Valid cellphone number");
-	        } else {
-	            System.out.println("Invalid cellphone number");
-	        }
-	        
-		System.out.print("Enter birthdate: ");
-	        String birthdate = scan.nextLine();
-
-	        Pattern pattern3 = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
-	        Matcher matcher3 = pattern.matcher(birthdate);
-
-	        boolean match3 = matcher.matches();
-
-	        if (match3) {
-	            System.out.println("Valid birthdate");
-	        } else {
-	            System.out.println("Invalid birthdate");
-	        }
-	        
-	        scan.close();
-		}
-	}
+System.out.print("Enter student email: ");
+String studentEmail = scan.nextLine();
+Matcher matcher = pattern.matcher(studentEmail);
+boolean match = matcher.matches();
+if (match) {
+ystem.out.println("Valid student email");
+} else {
+System.out.println("Invalid student email");
+}
+System.out.print("Enter cellphone number: ");
+String cellNum = scan.nextLine();
+Pattern pattern2 = Pattern.compile("\\+63\\d{9}");
+Matcher matcher2 = pattern.matcher(cellNum);
+boolean match2 = matcher.matches();
+if (match2) {
+System.out.println("Valid cellphone number");
+} else {
+System.out.println("Invalid cellphone number");
+}
+System.out.print("Enter birthdate: ");
+String birthdate = scan.nextLine();
+Pattern pattern3 = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
+Matcher matcher3 = pattern.matcher(birthdate);
+boolean match3 = matcher.matches();
+if (match3) {
+System.out.println("Valid birthdate");
+} else {
+System.out.println("Invalid birthdate");
+}
+scan.close();
+}
+}
