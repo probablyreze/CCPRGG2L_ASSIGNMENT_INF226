@@ -1,0 +1,14 @@
+package CompProgTerm2;
+
+public class App {
+    public static void main(String[] args) {
+
+    	Character Claymore = new Character();
+
+        Claymore.attackdamage = 10;
+        Claymore.magicdamage = 5;
+        Claymore.rarity = 0;
+        Claymore.name = "Wolf's Gravestone";
+        Claymore.showDamageandName();
+    }
+}
