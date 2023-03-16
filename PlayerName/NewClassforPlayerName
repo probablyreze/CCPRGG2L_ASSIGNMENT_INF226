@@ -1,0 +1,25 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class GameWindow extends JFrame {
+
+    // Constructor
+    public GameWindow(String playerName) {
+
+        super("Brick Breaker - " + playerName); // Title of window with player name
+
+        // Create a label to display the player name
+        JLabel nameLabel = new JLabel("Player: " + playerName);
+        nameLabel.setBounds(10, 10, 200, 20);
+        this.add(nameLabel);
+
+        // Add other components for the game window
+
+        // Dimensions
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setSize(600, 400);
+        this.setVisible(true);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
+    }
+}
