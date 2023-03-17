@@ -11,7 +11,7 @@ public class MainMenu extends JFrame {
     MainMenu() {
 
         JLabel imageLabel = new JLabel();
-        ImageIcon bgImage = new ImageIcon("haerin.gif");
+        ImageIcon bgImage = new ImageIcon("giphy.gif");
         imageLabel.setIcon(bgImage);
         this.add(imageLabel);
 
